@@ -10,17 +10,16 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         row-gpios
-            = <&pro_micro 20 (GPIO_ACTIVE_HIGH)>   // верхний ряд p0.29 (d20)
-            , <&pro_micro 19 (GPIO_ACTIVE_HIGH)>   // средний ряд p0.02 (d19)
-            , <&pro_micro 18 (GPIO_ACTIVE_HIGH)>;  // нижний ряд p1.15 (d18)
-
+            = <&pro_micro 20 (GPIO_ACTIVE_HIGH)>   // p0.29 (d20)
+            , <&pro_micro 19 (GPIO_ACTIVE_HIGH)>   // p0.02 (d19)
+            , <&pro_micro 18 (GPIO_ACTIVE_HIGH)>;  // p1.15 (d18)
         col-gpios
-            = <&pro_micro  3 (GPIO_ACTIVE_HIGH)>   // колонка 1 p0.20 (d3)
-            , <&pro_micro  4 (GPIO_ACTIVE_HIGH)>   // колонка 2 p0.22 (d4)
-            , <&pro_micro  5 (GPIO_ACTIVE_HIGH)>   // колонка 3 p0.24 (d5)
-            , <&pro_micro  6 (GPIO_ACTIVE_HIGH)>   // колонка 4 p1.00 (d6)
-            , <&pro_micro  7 (GPIO_ACTIVE_HIGH)>   // колонка 5 p0.11 (d7)
-            , <&pro_micro  8 (GPIO_ACTIVE_HIGH)>;  // колонка 6 p1.04 (d8)
+            = <&pro_micro  3 (GPIO_ACTIVE_HIGH)>   // p0.20 (d3)
+            , <&pro_micro  4 (GPIO_ACTIVE_HIGH)>   // p0.22 (d4)
+            , <&pro_micro  5 (GPIO_ACTIVE_HIGH)>   // p0.24 (d5)
+            , <&pro_micro  6 (GPIO_ACTIVE_HIGH)>   // p1.00 (d6)
+            , <&pro_micro  7 (GPIO_ACTIVE_HIGH)>   // p0.11 (d7)
+            , <&pro_micro  8 (GPIO_ACTIVE_HIGH)>;  // p1.04 (d8)
     };
 
     default_transform: matrix_transform {
