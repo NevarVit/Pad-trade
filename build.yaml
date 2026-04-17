@@ -1,4 +1,4 @@
 include:
   - board: nice_nano_v2
-    shield: pncateho
+    shield: tradepad
     artifact-name: zmk-pncateho
