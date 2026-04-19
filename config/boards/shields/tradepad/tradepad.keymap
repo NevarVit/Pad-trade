@@ -15,7 +15,7 @@
                 // Средний ряд
                 &kp A &kp S &kp D &kp F &kp G &kp H
                 // Нижний ряд (5 клавиш)
-                &mo 1       &kp LALT    &kp SPACE    &kp SPACE    &kp B
+                &mo 1    &kp LALT       &kp SPACE    &kp SPACE    &kp B
             >;
         };
 
