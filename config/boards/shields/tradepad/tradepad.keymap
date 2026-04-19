@@ -10,27 +10,27 @@
         default_layer {
             display-name = "Default";
             bindings = <
-                &kp Q     &kp W      &kp E    &kp R      &kp T    &kp J
-                &kp A     &kp S      &kp D    &kp F      &kp G    &kp V
-                &mo 1     &kp LALT   &none    &kp SPACE  &kp B    &kp Z
+                &kp N1    &kp N2      &kp N3    &kp N4      &kp N5    &kp X
+                &kp A     &kp S       &kp H     &kp P       &kp L     &kp V
+                &mo 1     &kp LALT    &none     &kp SPACE   &kp Z     &kp LSHFT
             >;
         };
 
         work_layer {
             display-name = "Work";
             bindings = <
-                &kp TAB    &kp F1    &kp F2   &kp F3    &kp F4      &kp Z
-                &kp W      &kp E     &none    &none     &bootloader &kp U
-                &none      &mo 2     &none    &none     &none       &sk LCTRL
+                &kp TAB    &kp F1    &kp F2   &kp F3    &kp F4    &kp J
+                &kp W      &kp E     &none    &kp C     &none     &kp U
+                &none      &mo 2     &none    &kp N     &none     &kp M
             >;
         };
 
         function_layer {
             display-name = "Function";
             bindings = <
-                &none    &none    &none    &none    &none             &none
-                &none    &none    &none    &none    &none             &none
-                &none    &none    &none    &kp X    &studio_unlock    &bootloader
+                &none    &kp F1    &kp F2   &kp F3     &kp F4            &none
+                &none    &none     &none    &none      &none             &none
+                &none    &none     &none    &kp LCTRL  &studio_unlock    &bootloader 
             >;
         };
     };
