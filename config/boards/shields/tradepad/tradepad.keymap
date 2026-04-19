@@ -16,7 +16,7 @@
             >;
         };
 
-        function_layer {
+        work_layer {
             display-name = "Work";
             bindings = <
                 &kp TAB    &kp F1    &kp F2   &kp F3    &kp F4      &kp Z
