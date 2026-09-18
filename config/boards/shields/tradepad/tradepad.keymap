@@ -3,6 +3,14 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    macros {
+        screenshot_partial: screenshot_partial {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LSHFT &kp LCTRL>, <&macro_tap &kp F5>, <&macro_release &kp LCTRL &kp LSHFT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,9 +36,9 @@
         function_layer {
             display-name = "Function";
             bindings = <
-                &kp F1         &kp F2       &kp F3   &kp F4          &kp F5    &kp F6  
-                &kp F7         &kp F8       &kp F9   &kp F10         &kp F11   &kp F12 
-                &kp LS(LG(L))  &kp LG(F4)   &none    &kp PSCRN      &none     &mo 3
+                &kp F1         &kp F2       &kp F3   &kp F4                 &kp F5    &kp F6  
+                &kp F7         &kp F8       &kp F9   &kp F10                &kp F11   &kp F12 
+                &kp LS(LG(L))  &kp LG(F4)   &none    &screenshot_partial    &none     &mo 3
             >;
         };
 
