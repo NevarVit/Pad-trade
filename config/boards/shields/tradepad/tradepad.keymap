@@ -10,27 +10,27 @@
         default_layer {
             display-name = "Default";
             bindings = <
-                &kp TAB    &kp N1      &kp N2    &kp N4      &kp N8      &kp UP
-                &kp LSHFT  &kp LC(C)   &kp LC(X) &kp LC(Z)   &kp LC(V)   &kp DOWN
-                &mo 1      &kp LALT    &none     &kp SPACE   &kp LEFT    &kp RIGHT
+                &kp TAB     &kp N1      &kp N2     &kp N4       &kp N8    &kp BSPC 
+                &kp LSHFT   &kp LC(C)   &kp LC(X)  &kp LC(Z)    &kp LC(V) &kp DELETE  
+                &kp LCTRL   &kp LALT    &none      &kp SPACE    &mo 2     &mo 1
             >;
         };
 
         work_layer {
             display-name = "Work";
             bindings = <
-                &kp ESC    &kp F1    &kp F2   &kp F3    &kp F4    &kp BSPC
-                &sk LCTRL      &kp E     &none    &kp C     &none     &kp U
-                &none      &mo 2     &none    &kp N     &none     &kp M
+                &kp ESC    &kp UP    &none      &none   &kp HOME   &kp PG_UP   
+                &kp LEFT   &kp DOWN  &kp RIGHT  &kp E    &kp END   &kp PG_DN        
+                &none      &none     &none      &none    &none     &none
             >;
         };
 
         function_layer {
             display-name = "Function";
             bindings = <
-                &none    &kp F1    &kp F2   &kp F3     &kp F4            &none
-                &none    &none     &none    &none      &none             &none
-                &none    &none     &none    &kp LCTRL  &studio_unlock    &bootloader 
+                &kp F1   &kp F2       &kp F3   &kp F4    &kp F5    &kp F6  
+                &kp F7   &kp F8       &kp F9   &kp F10   &kp F11   &kp F12 
+                &none    &bootloader  &none     &none    &none     &none   
             >;
         };
     };
